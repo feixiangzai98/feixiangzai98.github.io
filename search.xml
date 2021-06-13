@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML学习心得（超链接）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/</url>
+    <content><![CDATA[<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>在 HTML 中，我们使用 <a> 标签来表示超链接。</p>
+<p>超链接（Hyperlink）是网页中最常见的元素之一，整个互联网都是基于超链接而构建的。每个网站都由众多的网页组成，超链接使得网页之间不再独立，它就像一根线，把网页连接在一起，形成一个网状结构。互联网之所以能够称之为“网”，就是因为有超链接的存在。</p>
+ <span id="more"></span>
+
+<p><a> 标签的语法格式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;url&quot;  target=&quot;opentype&quot;&gt;链接文本&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，href 属性用来指明要跳转到的 url，target 属性用来指明新页面的打开方式，链接文本需要写在 <a> 和 </a> 之间。</p>
+<p>例如，链接到超链接首页可以这样写：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>链接到C语言中文网里面的一个 HTML 页面可以这样写：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/view/7410.html&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>网站到底是什么<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>下面，我们来详细分析一下 <a> 标签的各个属性。</p>
+<h3 id="href-属性"><a href="#href-属性" class="headerlink" title="href 属性"></a>href 属性</h3><p>href 属性指定链接的目标，也就是要跳转到什么位置。href 可以有多种形式，例如：</p>
+<ul>
+<li>href     可以指向一个网页（.html、.php、.jsp、.asp等格式），这也是最常见的形式，例如     href=”<a href="http://c.biancheng.net/view/1719.html&quot;%EF%BC%9B">http://c.biancheng.net/view/1719.html&quot;；</a></li>
+<li>href     可以指向图片（.jpg、.gif、.png 等格式）、音频（.mp3、.wav等格式）、视频（.mp4、.mkv格式）等媒体文件，例如     href=”/uploads/allimg/181221/134I32557-0.jpg”；</li>
+<li>href     可以指向压缩文件（.zip、.rar等格式）、可执行程序（.exe）等，一些下载网站的链接就可以写成这种形式，例如     href=”./../uploads/data_package/ComputerFoundation.zip”；</li>
+<li>href     甚至还可以指向本机的文件，只是很少这样使用，例如 href=”D:/Program     Files/360/360safe/360Safe.exe”。</li>
+</ul>
+<p>​       你看，href 本质上就是指向一个文件，这个文件几乎可以是任意格式的。如果浏览器支持这种格式，那么它就可以在浏览器上显示，比如常见的图片、音频、视频等，如果浏览器不支持这种格式，那么就提示用户下载。</p>
+<p>​        另外，href 使用的路径可以是绝对路径，也可以是相对路径。绝对路径往往以域名为起点，例如 <a href="http://c.biancheng.net/view/1719.html%EF%BC%9B%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BE%80%E5%BE%80%E4%BB%A5%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E5%BD%93%E5%89%8D%E5%9F%9F%E5%90%8D%E4%B8%BA%E8%B5%B7%E7%82%B9%EF%BC%8C%E4%BE%8B%E5%A6%82">http://c.biancheng.net/view/1719.html；相对路径往往以当前文件或者当前域名为起点，例如</a> ./../uploads/data_package/ComputerFoundation.zip。 后续我们将在《<a href="http://c.biancheng.net/view/7538.html">绝对路径与相对路径</a>》一文中详细讲解，这里大家不必深究。</p>
+<h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3><p>在创建网页时，默认情况下，超链接在当前的浏览器窗口打开，但是我们可以使用 target 属性来改变目标窗口的打开方式。常见的打开方式如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th><strong>属性值</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>_self</td>
+<td>默认，在现有的窗口中打开新页面，原窗口将被覆盖。</td>
+</tr>
+<tr>
+<td>_blank</td>
+<td>在新的窗口中打开新页面。</td>
+</tr>
+<tr>
+<td>_parent</td>
+<td>在当前框架的上一层打开新页面。</td>
+</tr>
+<tr>
+<td>_top</td>
+<td>在顶层框架中打开新页面。</td>
+</tr>
+</tbody></table>
+<p>target 属性值</p>
+<p>​        绝大部分情况下，target 属性要么不写，保持默认的 _self，要么把它的值设置为 _blank，在新的窗口中打开链接。例如：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">1. <span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line">2. <span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">3. <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">4.     <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">5.     <span class="tag">&lt;<span class="name">title</span>&gt;</span>a标签<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">6. <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">7. <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">8.     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">9.     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">10. <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">11. <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="标签的默认样式"><a href="#标签的默认样式" class="headerlink" title="标签的默认样式"></a><a>标签的默认样式</h3><p><strong>1) 鼠标样式</strong></p>
+<p>​         当鼠标移入网页上的某个超链接时，其样式会变为一只小手；当鼠标移出超链接区域时，样式会再次回到箭头形状。</p>
+<p><strong>2) 颜色及下划线</strong></p>
+<p>​        任何 HTML 元素都有默认的样式，<a> 标签也不例外。在浏览器下，超链接被点击后颜色会发生改变：超链接被点击之前是蓝色的，点击之后会变成紫色。</p>
+<p>​        超链接默认是带下划线的，下划线颜色和文本颜色保持一致。 浏览器根据历史记录来判断超链接是否被点击过，如果 <a> 标签的 href 属性和历史记录中的某条 URL 重合，那就说明该链接被点击了，否则是没有被点击的。所以，清空浏览器的历史记录会让超链接的颜色再次变回蓝色。</p>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML学习心得（插入图片标签）</title>
     <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</url>
     <content><![CDATA[<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>​        开发过程中，经常使用图像来美化页面，图像已经成为大多数网站的一个重要组成部分。都说一图胜千言，好的图像有助于制作出精美的网站，从而与那些外观平平的网站区别开来。在 HTML 中，使用 <img> 标签来插入图像，其语法格式如下：</p>
+<span id="more"></span>
+
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p><img> 是图片 image 的简称，它只包含属性，没有闭和标签。src 是它的必选属性，用来表示图片的路径来源。下面，我们来详细分析一下 <img> 标签的 src 属性。</p>
@@ -47,16 +118,15 @@
   <entry>
     <title>HTML学习心得（URL）</title>
     <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</url>
-    <content><![CDATA[<p>URL结构解析</p>
-<p>本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。</p>
+    <content><![CDATA[<h3 id="URL结构解析"><a href="#URL结构解析" class="headerlink" title="URL结构解析"></a>URL结构解析</h3><p>本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。</p>
+<span id="more"></span>
+
 <p>在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource Locator，URL），也被称为网址。每个 URL 都有其对应的文件（文档），例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a> 对应的是《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章，<a href="https://www.baidu.com/index.html">https://www.baidu.com/index.html</a> 对应的则是百度的官网首页。</p>
 <p>URL 是互联网的基础，最常见的形式就是网页通过链接，也就是 <a> 标签来包含其它 URL，用户通过点击，从当前 URL 跳转到另一个 URL。下面我们看一下 URL 是如何构成的。</p>
-<p><strong>1. URL的构成</strong></p>
-<p>URL 遵守一种标准的语法，它由协议、主机名、域名、端口、路径、以及文件名这六个部分构成，其中端口可以省略。具体语法规则如下：</p>
+<h3 id="URL的构成"><a href="#URL的构成" class="headerlink" title="URL的构成"></a>URL的构成</h3><p>URL 遵守一种标准的语法，它由协议、主机名、域名、端口、路径、以及文件名这六个部分构成，其中端口可以省略。具体语法规则如下：</p>
 <p>scheme://host.domain:port/path/filename</p>
 <p>在上述语法规则中，scheme 表示协议，host 表示主机名，domain 表示域名，port 表示端口（可以省略），path 表示文件的路径，filename 表示文件名称。接下来我们详细看一下这几部分到底是如何使用的。</p>
-<p><strong>1) 协议</strong></p>
-<p>协议用来指明客户端和服务器之间通信的类型。我们经常用到的协议有四种：http、https、ftp 以及 file。这四种协议的使用场景如下表所示：</p>
+<h4 id="协议"><a href="#协议" class="headerlink" title="协议"></a>协议</h4><p>协议用来指明客户端和服务器之间通信的类型。我们经常用到的协议有四种：http、https、ftp 以及 file。这四种协议的使用场景如下表所示：</p>
 <p>协议使用场景</p>
 <table>
 <thead>
@@ -82,87 +152,12 @@
 <td>本机上的文件。</td>
 </tr>
 </tbody></table>
-<p><strong>2) 主机名</strong></p>
-<p>主机名可以向浏览器提供文件站点的名称。www 是我们常见的主机名，例如百度的网址 <a href="https://www.baidu.com/%E3%80%81%E6%B7%98%E5%AE%9D%E7%9A%84%E7%BD%91%E5%9D%80">https://www.baidu.com/、淘宝的网址</a> <a href="https://www.taobao.com/">https://www.taobao.com/</a> 使用的都是 www 的主机名。除此之外，还有很多网站使用的是其它主机名。例如C语言中文网的网址 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 的主机名是c，网易云音乐的网址 <a href="https://music.163.com/">https://music.163.com/</a> 的主机名是 music。</p>
-<p><strong>3) 域名</strong></p>
-<p>域名和主机名一起使用，被用来定义服务器的地址。Web 服务器遵守数字网际协议（Internet Protocol，IP），每一台连接到因特网的计算机都有一个固定的 IP 地址。域名即 IP 地址的别名，因为一般的 IP 地址都是长串的数字，为了方便记忆所以使用域名进行替代。简单来说，没有域名（IP）我们就不能上网。</p>
-<p><strong>4) 端口</strong></p>
-<p>端口用来定义主机上的端口号。如果不写，http 的默认端口号是 80，https 的默认端口号是 443，ftp 的默认端口号是 21。还是拿 C语言中文网举例说明，不论用户输入 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 还是 <a href="http://c.biancheng.net/:80%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%BD%E4%BC%9A%E8%A7%A3%E6%9E%90%E4%B8%BA">http://c.biancheng.net/:80，浏览器都会解析为</a> C语言中文网的链接。</p>
-<p><strong>5) 路径</strong></p>
-<p>路径指定服务器上文件的所在位置。就像我们自己在计算机上保存文件时所指定的文件夹一样，Web 服务器上的文件也有可能是存放在子目录（就是文件夹中的子文件夹）中的。如果是这样，路径中的相邻文件夹需要使用斜线（/）隔开。例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/views/7410.html</a> 这个网址，它的路径就是 /view/views。</p>
-<p><strong>6) 文件名</strong></p>
-<p>文件名用来定义文档或资源的名称。和路径类似，路径指的是文件夹，而它指的是文件夹中的文件。我们在《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章中讲到过网页文件的后缀有很多种，比如.html 、.php、 .jsp、.asp等。</p>
+<h4 id="主机名"><a href="#主机名" class="headerlink" title="主机名"></a>主机名</h4><p>主机名可以向浏览器提供文件站点的名称。www 是我们常见的主机名，例如百度的网址 <a href="https://www.baidu.com/%E3%80%81%E6%B7%98%E5%AE%9D%E7%9A%84%E7%BD%91%E5%9D%80">https://www.baidu.com/、淘宝的网址</a> <a href="https://www.taobao.com/">https://www.taobao.com/</a> 使用的都是 www 的主机名。除此之外，还有很多网站使用的是其它主机名。例如C语言中文网的网址 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 的主机名是c，网易云音乐的网址 <a href="https://music.163.com/">https://music.163.com/</a> 的主机名是 music。</p>
+<h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><p>域名和主机名一起使用，被用来定义服务器的地址。Web 服务器遵守数字网际协议（Internet Protocol，IP），每一台连接到因特网的计算机都有一个固定的 IP 地址。域名即 IP 地址的别名，因为一般的 IP 地址都是长串的数字，为了方便记忆所以使用域名进行替代。简单来说，没有域名（IP）我们就不能上网。</p>
+<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a><strong>端口</strong></h4><p>端口用来定义主机上的端口号。如果不写，http 的默认端口号是 80，https 的默认端口号是 443，ftp 的默认端口号是 21。还是拿 C语言中文网举例说明，不论用户输入 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 还是 <a href="http://c.biancheng.net/:80%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%BD%E4%BC%9A%E8%A7%A3%E6%9E%90%E4%B8%BA">http://c.biancheng.net/:80，浏览器都会解析为</a> C语言中文网的链接。</p>
+<h4 id="路径"><a href="#路径" class="headerlink" title="路径"></a><strong>路径</strong></h4><p>路径指定服务器上文件的所在位置。就像我们自己在计算机上保存文件时所指定的文件夹一样，Web 服务器上的文件也有可能是存放在子目录（就是文件夹中的子文件夹）中的。如果是这样，路径中的相邻文件夹需要使用斜线（/）隔开。例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/views/7410.html</a> 这个网址，它的路径就是 /view/views。</p>
+<h4 id="文件名"><a href="#文件名" class="headerlink" title="文件名"></a><strong>文件名</strong></h4><p>文件名用来定义文档或资源的名称。和路径类似，路径指的是文件夹，而它指的是文件夹中的文件。我们在《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章中讲到过网页文件的后缀有很多种，比如.html 、.php、 .jsp、.asp等。</p>
 <p>协议需要与 URL 的其它部分用://隔开。百度的网址后面的.com以及 C语言中文网的.net又称作域后缀（扩展名），用于表明该主机所在的域的类型。</p>
-]]></content>
-      <categories>
-        <category>HTML学习</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML学习心得（超链接）</title>
-    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/</url>
-    <content><![CDATA[<p>在 HTML 中，我们使用 <a> 标签来表示超链接。</p>
-<p>超链接（Hyperlink）是网页中最常见的元素之一，整个互联网都是基于超链接而构建的。每个网站都由众多的网页组成，超链接使得网页之间不再独立，它就像一根线，把网页连接在一起，形成一个网状结构。互联网之所以能够称之为“网”，就是因为有超链接的存在。</p>
-<p><a> 标签的语法格式如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;url&quot;  target=&quot;opentype&quot;&gt;链接文本&lt;/a&gt;</span><br></pre></td></tr></table></figure>
-
-<p>其中，href 属性用来指明要跳转到的 url，target 属性用来指明新页面的打开方式，链接文本需要写在 <a> 和 </a> 之间。</p>
-<p>例如，链接到超链接首页可以这样写：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>链接到C语言中文网里面的一个 HTML 页面可以这样写：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/view/7410.html&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>网站到底是什么<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>下面，我们来详细分析一下 <a> 标签的各个属性。</p>
-<p><strong>1. href 属性</strong></p>
-<p>href 属性指定链接的目标，也就是要跳转到什么位置。href 可以有多种形式，例如：</p>
-<ul>
-<li>href     可以指向一个网页（.html、.php、.jsp、.asp等格式），这也是最常见的形式，例如     href=”<a href="http://c.biancheng.net/view/1719.html&quot;%EF%BC%9B">http://c.biancheng.net/view/1719.html&quot;；</a></li>
-<li>href     可以指向图片（.jpg、.gif、.png 等格式）、音频（.mp3、.wav等格式）、视频（.mp4、.mkv格式）等媒体文件，例如     href=”/uploads/allimg/181221/134I32557-0.jpg”；</li>
-<li>href     可以指向压缩文件（.zip、.rar等格式）、可执行程序（.exe）等，一些下载网站的链接就可以写成这种形式，例如     href=”./../uploads/data_package/ComputerFoundation.zip”；</li>
-<li>href     甚至还可以指向本机的文件，只是很少这样使用，例如 href=”D:/Program     Files/360/360safe/360Safe.exe”。</li>
-</ul>
-<p>​       你看，href 本质上就是指向一个文件，这个文件几乎可以是任意格式的。如果浏览器支持这种格式，那么它就可以在浏览器上显示，比如常见的图片、音频、视频等，如果浏览器不支持这种格式，那么就提示用户下载。</p>
-<p>​        另外，href 使用的路径可以是绝对路径，也可以是相对路径。绝对路径往往以域名为起点，例如 <a href="http://c.biancheng.net/view/1719.html%EF%BC%9B%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BE%80%E5%BE%80%E4%BB%A5%E5%BD%93%E5%89%8D%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E5%BD%93%E5%89%8D%E5%9F%9F%E5%90%8D%E4%B8%BA%E8%B5%B7%E7%82%B9%EF%BC%8C%E4%BE%8B%E5%A6%82">http://c.biancheng.net/view/1719.html；相对路径往往以当前文件或者当前域名为起点，例如</a> ./../uploads/data_package/ComputerFoundation.zip。 后续我们将在《<a href="http://c.biancheng.net/view/7538.html">绝对路径与相对路径</a>》一文中详细讲解，这里大家不必深究。</p>
-<p><strong>2. target属性</strong></p>
-<p>在创建网页时，默认情况下，超链接在当前的浏览器窗口打开，但是我们可以使用 target 属性来改变目标窗口的打开方式。常见的打开方式如下表所示：</p>
-<table>
-<thead>
-<tr>
-<th><strong>属性值</strong></th>
-<th><strong>说明</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>_self</td>
-<td>默认，在现有的窗口中打开新页面，原窗口将被覆盖。</td>
-</tr>
-<tr>
-<td>_blank</td>
-<td>在新的窗口中打开新页面。</td>
-</tr>
-<tr>
-<td>_parent</td>
-<td>在当前框架的上一层打开新页面。</td>
-</tr>
-<tr>
-<td>_top</td>
-<td>在顶层框架中打开新页面。</td>
-</tr>
-</tbody></table>
-<p>target 属性值</p>
-<p>​        绝大部分情况下，target 属性要么不写，保持默认的 _self，要么把它的值设置为 _blank，在新的窗口中打开链接。例如：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">1. <span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line">2. <span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line">3. <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">4.     <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">5.     <span class="tag">&lt;<span class="name">title</span>&gt;</span>a标签<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">6. <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">7. <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">8.     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">9.     <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;http://c.biancheng.net/&quot;</span>&gt;</span>超链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">10. <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line">11. <span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>3. <a>标签的默认样式</strong></p>
-<p><strong>1) 鼠标样式</strong></p>
-<p>​         当鼠标移入网页上的某个超链接时，其样式会变为一只小手；当鼠标移出超链接区域时，样式会再次回到箭头形状。</p>
-<p><strong>2) 颜色及下划线</strong></p>
-<p>​        任何 HTML 元素都有默认的样式，<a> 标签也不例外。在浏览器下，超链接被点击后颜色会发生改变：超链接被点击之前是蓝色的，点击之后会变成紫色。</p>
-<p>​        超链接默认是带下划线的，下划线颜色和文本颜色保持一致。 浏览器根据历史记录来判断超链接是否被点击过，如果 <a> 标签的 href 属性和历史记录中的某条 URL 重合，那就说明该链接被点击了，否则是没有被点击的。所以，清空浏览器的历史记录会让超链接的颜色再次变回蓝色。</p>
 ]]></content>
       <categories>
         <category>HTML学习</category>
@@ -176,6 +171,8 @@
     <url>/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[<p>​        互联网已经深入人们的世界中，每个人每天都要浏览各种网页来获取不同的信息，那么网站是怎么来的？让我们进一步了解下去。  </p>
 <p>​       网站是由一个个网页构成的，想要理解网站是什么，我们先要从网站说起。</p>
+<span id="more"></span>
+
 <h3 id="什么是网页？"><a href="#什么是网页？" class="headerlink" title="什么是网页？"></a>什么是网页？</h3><p>​      网页其实就是放在服务器上的文件构成，当我们浏览网页时，这个文件会被下载到我们本地的电脑，然后再由浏览器解析，渲染出我们看到的界面来，例如下图是我们经常网上购物的网站淘宝：</p>
 <p>![网页图片](C:\Users\feixi\Pictures\Saved Pictures\image-20210613111156137.png)</p>
 <p>​      其实别看它花里胡哨，其实他的本质都是HTML代码构成的纯文本文件，经由CSS、JavaScript、JQuery、Ajax等技术渲染构成。</p>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-13T07:28:16.170Z</updated>
+  <updated>2021-06-13T08:46:51.781Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,18 +21,10 @@
     <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/"/>
     <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</id>
     <published>2021-06-13T06:24:24.000Z</published>
-    <updated>2021-06-13T07:28:16.170Z</updated>
+    <updated>2021-06-13T08:46:51.781Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;URL结构解析&lt;/p&gt;
-&lt;p&gt;本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。&lt;/p&gt;
-&lt;p&gt;在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;URL结构解析&quot;&gt;&lt;a href=&quot;#URL结构解析&quot; class=&quot;headerlink&quot; title=&quot;URL结构解析&quot;&gt;&lt;/a&gt;URL结构解析&lt;/h3&gt;&lt;p&gt;本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。&lt;/p&gt;</summary>
     
     
     
@@ -48,16 +40,11 @@
     <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/"/>
     <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/</id>
     <published>2021-06-13T06:04:24.000Z</published>
-    <updated>2021-06-13T07:12:58.834Z</updated>
+    <updated>2021-06-13T08:44:59.467Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 HTML 中，我们使用 &lt;a&gt;</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;超链接&quot;&gt;&lt;a href=&quot;#超链接&quot; class=&quot;headerlink&quot; title=&quot;超链接&quot;&gt;&lt;/a&gt;超链接&lt;/h3&gt;&lt;p&gt;在 HTML 中，我们使用 &lt;a&gt; 标签来表示超链接。&lt;/p&gt;
+&lt;p&gt;超链接（Hyperlink）是网页中最常见的元素之一，整个互联网都是基于超链接而构建的。每个网站都由众多的网页组成，超链接使得网页之间不再独立，它就像一根线，把网页连接在一起，形成一个网状结构。互联网之所以能够称之为“网”，就是因为有超链接的存在。&lt;/p&gt;</summary>
     
     
     
@@ -73,16 +60,10 @@
     <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/"/>
     <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</id>
     <published>2021-06-13T03:04:24.000Z</published>
-    <updated>2021-06-13T04:34:40.612Z</updated>
+    <updated>2021-06-13T08:41:45.968Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;插入图片&quot;&gt;&lt;a href=&quot;#插入图片&quot; class=&quot;headerlink&quot; title=&quot;插入图片&quot;&gt;&lt;/a&gt;插入图片&lt;/h3&gt;&lt;p&gt;​       </summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;插入图片&quot;&gt;&lt;a href=&quot;#插入图片&quot; class=&quot;headerlink&quot; title=&quot;插入图片&quot;&gt;&lt;/a&gt;插入图片&lt;/h3&gt;&lt;p&gt;​        开发过程中，经常使用图像来美化页面，图像已经成为大多数网站的一个重要组成部分。都说一图胜千言，好的图像有助于制作出精美的网站，从而与那些外观平平的网站区别开来。在 HTML 中，使用 &lt;img&gt; 标签来插入图像，其语法格式如下：&lt;/p&gt;</summary>
     
     
     
@@ -98,18 +79,11 @@
     <link href="http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/"/>
     <id>http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</id>
     <published>2021-06-12T13:01:24.000Z</published>
-    <updated>2021-06-13T03:47:06.477Z</updated>
+    <updated>2021-06-13T08:41:33.474Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;​        互联网已经深入人们的世界中，每个人每天都要浏览各种网页来获取不同的信息，那么网站是怎么来的？让我们进一步了解下去。  &lt;/p&gt;
-&lt;p&gt;​       网站是由一个个网页构成的，想要理解网站是什么，我们先要从网站说起。&lt;/p&gt;
-&lt;h3</summary>
-        
-      
+&lt;p&gt;​       网站是由一个个网页构成的，想要理解网站是什么，我们先要从网站说起。&lt;/p&gt;</summary>
     
     
     
