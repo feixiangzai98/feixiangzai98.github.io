@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-13T03:37:53.876Z</updated>
+  <updated>2021-06-13T03:47:06.477Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HTML学习心得</title>
-    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2021-06-13T03:29:51.684Z</published>
-    <updated>2021-06-13T03:37:53.876Z</updated>
+    <title>HTML学习心得（什么是网站）</title>
+    <link href="http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/"/>
+    <id>http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</id>
+    <published>2021-06-12T13:01:24.000Z</published>
+    <updated>2021-06-13T03:47:06.477Z</updated>
     
     
       
@@ -36,6 +36,10 @@
     
     
     
+    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
     
   </entry>
   
