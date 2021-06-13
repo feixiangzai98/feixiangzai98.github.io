@@ -1,50 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HTML学习心得（插入图片标签）</title>
-    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</url>
-    <content><![CDATA[<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>​        开发过程中，经常使用图像来美化页面，图像已经成为大多数网站的一个重要组成部分。都说一图胜千言，好的图像有助于制作出精美的网站，从而与那些外观平平的网站区别开来。在 HTML 中，使用 <img> 标签来插入图像，其语法格式如下：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img> 是图片 image 的简称，它只包含属性，没有闭和标签。src 是它的必选属性，用来表示图片的路径来源。下面，我们来详细分析一下 <img> 标签的 src 属性。</p>
-<h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p>​        src 是 source 的简称，用来声明图像文件的来源，也就是定义图片的引用地址。图片可以是.jpg、.png、.gif等多种格式，引用地址可以是相对 url，也可以是绝对 url。下面我们来看两个示例。</p>
-<h5 id="引用网络图片"><a href="#引用网络图片" class="headerlink" title="引用网络图片"></a>引用网络图片</h5><p>​      引用网络图片语法格式如下：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://tupian.hudiewang.com/cpp/tem/new/logo.jpg?v=4.213&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="引用本地图片"><a href="#引用本地图片" class="headerlink" title="引用本地图片"></a>引用本地图片</h5><p>​      如果在项目的当前文件中，想要引入上一层 image 目录下的一张图片 logo.jpg，可以这样引用：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;../image/logo.jpg&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>此处../可以进入上一层目录，然后进入 image 文件夹，最后找到 img.jpg。</p>
-<p>提示：图片的名称尽量不要使用中文，否则即使路径正确，浏览器也可能无法识别，从而显示不出图片。</p>
-<h3 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h3><p>​       前面讲述了 <img> 标签的必选属性 src，接下来再看一下它的可选属性。<img> 标签常用的可选属性有alt、title、width以及height等，我们来分别看一下：</p>
-<ul>
-<li>alt     属性用来对图像进行文本说明。一般情况下，当浏览器因某种原因无法载入图像时，就会显示这段文本。虽然 alt 属性值可以为空，但还是建议读者给 alt     属性设置符合图像信息的文本；</li>
-<li>title     用来设置鼠标移动到图片上的提示文字。它的值一般与 alt 的值相同，最大的区别是显示的前提条件不同，alt 属性是图片加载失败后显示，而 title     属性则是图片加载成功后鼠标放到它上面才显示；</li>
-<li>width     用来设置图片的宽度，使用时不需要加单位，默认是像素（px）；</li>
-<li>height     用来设置图片的高度，和 width 一样在使用时不需要加单位，默认是像素（px）。</li>
-</ul>
-<p>具体使用方法如下：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://c.baidu.com/cpp/temp/images/logo.jpg?v=3.412&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">title</span>=<span class="string">&quot;这是logo&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;SZ&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​        在这段代码中，首先引入了文件的路径，紧接着对图片的宽高进行了设置，均是 200px；其次又设置了 title 属性，当鼠标移动到图片上时，会显示 title 的内容；最后设置了 alt，当图片加载不出来会显示 alt 的内容。</p>
-<p>​         建议读者为页面上的图像都加上 alt 属性，这样不仅有助于更好的显示信息，而且对于那些使用屏幕阅读软件（存在视觉障碍的人使用的一类软件）的人来说帮助很大。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从上面的讲述中我们可以收获以下几点内容：</p>
-<ul>
-<li>src     表示图片的引用地址，这个地址可以是相对 url，也可以是绝对 url；</li>
-<li>alt     表示图片加载失败时显示的内容；</li>
-<li>title     表示鼠标移动到图片上时显示的文字；</li>
-<li>width     表示图片的宽，默认单位是像素（px）；</li>
-<li>height     表示图片的高，默认单位也是像素（px）。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>HTML学习</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML学习心得（超链接）</title>
     <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B003/</url>
     <content><![CDATA[<p>在 HTML 中，我们使用 <a> 标签来表示超链接。</p>
@@ -115,54 +71,41 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML学习心得（URL）</title>
-    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</url>
-    <content><![CDATA[<p>URL结构解析</p>
-<p>本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。</p>
-<p>在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource Locator，URL），也被称为网址。每个 URL 都有其对应的文件（文档），例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a> 对应的是《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章，<a href="https://www.baidu.com/index.html">https://www.baidu.com/index.html</a> 对应的则是百度的官网首页。</p>
-<p>URL 是互联网的基础，最常见的形式就是网页通过链接，也就是 <a> 标签来包含其它 URL，用户通过点击，从当前 URL 跳转到另一个 URL。下面我们看一下 URL 是如何构成的。</p>
-<p><strong>1. URL的构成</strong></p>
-<p>URL 遵守一种标准的语法，它由协议、主机名、域名、端口、路径、以及文件名这六个部分构成，其中端口可以省略。具体语法规则如下：</p>
-<p>scheme://host.domain:port/path/filename</p>
-<p>在上述语法规则中，scheme 表示协议，host 表示主机名，domain 表示域名，port 表示端口（可以省略），path 表示文件的路径，filename 表示文件名称。接下来我们详细看一下这几部分到底是如何使用的。</p>
-<p><strong>1) 协议</strong></p>
-<p>协议用来指明客户端和服务器之间通信的类型。我们经常用到的协议有四种：http、https、ftp 以及 file。这四种协议的使用场景如下表所示：</p>
-<p>协议使用场景</p>
-<table>
-<thead>
-<tr>
-<th><strong>协议</strong></th>
-<th><strong>使用场景</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>http（HyperText Transfer Protocol）</td>
-<td>超文本传输协议。http 协议可以将编码为超文本的数据从一台计算机传送到另一台计算机，不进行加密。</td>
-</tr>
-<tr>
-<td>https（HyperText Transfer Protocol over SecureSocket Layer）</td>
-<td>安全超文本传输协议。以安全为目标的 http 通道，安全网页，加密所有信息交换。</td>
-</tr>
-<tr>
-<td>ftp（File Transfer Protocol）</td>
-<td>文件传输协议。</td>
-</tr>
-<tr>
-<td>file</td>
-<td>本机上的文件。</td>
-</tr>
-</tbody></table>
-<p><strong>2) 主机名</strong></p>
-<p>主机名可以向浏览器提供文件站点的名称。www 是我们常见的主机名，例如百度的网址 <a href="https://www.baidu.com/%E3%80%81%E6%B7%98%E5%AE%9D%E7%9A%84%E7%BD%91%E5%9D%80">https://www.baidu.com/、淘宝的网址</a> <a href="https://www.taobao.com/">https://www.taobao.com/</a> 使用的都是 www 的主机名。除此之外，还有很多网站使用的是其它主机名。例如C语言中文网的网址 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 的主机名是c，网易云音乐的网址 <a href="https://music.163.com/">https://music.163.com/</a> 的主机名是 music。</p>
-<p><strong>3) 域名</strong></p>
-<p>域名和主机名一起使用，被用来定义服务器的地址。Web 服务器遵守数字网际协议（Internet Protocol，IP），每一台连接到因特网的计算机都有一个固定的 IP 地址。域名即 IP 地址的别名，因为一般的 IP 地址都是长串的数字，为了方便记忆所以使用域名进行替代。简单来说，没有域名（IP）我们就不能上网。</p>
-<p><strong>4) 端口</strong></p>
-<p>端口用来定义主机上的端口号。如果不写，http 的默认端口号是 80，https 的默认端口号是 443，ftp 的默认端口号是 21。还是拿 C语言中文网举例说明，不论用户输入 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 还是 <a href="http://c.biancheng.net/:80%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%BD%E4%BC%9A%E8%A7%A3%E6%9E%90%E4%B8%BA">http://c.biancheng.net/:80，浏览器都会解析为</a> C语言中文网的链接。</p>
-<p><strong>5) 路径</strong></p>
-<p>路径指定服务器上文件的所在位置。就像我们自己在计算机上保存文件时所指定的文件夹一样，Web 服务器上的文件也有可能是存放在子目录（就是文件夹中的子文件夹）中的。如果是这样，路径中的相邻文件夹需要使用斜线（/）隔开。例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/views/7410.html</a> 这个网址，它的路径就是 /view/views。</p>
-<p><strong>6) 文件名</strong></p>
-<p>文件名用来定义文档或资源的名称。和路径类似，路径指的是文件夹，而它指的是文件夹中的文件。我们在《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章中讲到过网页文件的后缀有很多种，比如.html 、.php、 .jsp、.asp等。</p>
-<p>协议需要与 URL 的其它部分用://隔开。百度的网址后面的.com以及 C语言中文网的.net又称作域后缀（扩展名），用于表明该主机所在的域的类型。</p>
+    <title>HTML学习心得（插入图片标签）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</url>
+    <content><![CDATA[<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>​        开发过程中，经常使用图像来美化页面，图像已经成为大多数网站的一个重要组成部分。都说一图胜千言，好的图像有助于制作出精美的网站，从而与那些外观平平的网站区别开来。在 HTML 中，使用 <img> 标签来插入图像，其语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img> 是图片 image 的简称，它只包含属性，没有闭和标签。src 是它的必选属性，用来表示图片的路径来源。下面，我们来详细分析一下 <img> 标签的 src 属性。</p>
+<h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p>​        src 是 source 的简称，用来声明图像文件的来源，也就是定义图片的引用地址。图片可以是.jpg、.png、.gif等多种格式，引用地址可以是相对 url，也可以是绝对 url。下面我们来看两个示例。</p>
+<h5 id="引用网络图片"><a href="#引用网络图片" class="headerlink" title="引用网络图片"></a>引用网络图片</h5><p>​      引用网络图片语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://tupian.hudiewang.com/cpp/tem/new/logo.jpg?v=4.213&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="引用本地图片"><a href="#引用本地图片" class="headerlink" title="引用本地图片"></a>引用本地图片</h5><p>​      如果在项目的当前文件中，想要引入上一层 image 目录下的一张图片 logo.jpg，可以这样引用：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;../image/logo.jpg&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>此处../可以进入上一层目录，然后进入 image 文件夹，最后找到 img.jpg。</p>
+<p>提示：图片的名称尽量不要使用中文，否则即使路径正确，浏览器也可能无法识别，从而显示不出图片。</p>
+<h3 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h3><p>​       前面讲述了 <img> 标签的必选属性 src，接下来再看一下它的可选属性。<img> 标签常用的可选属性有alt、title、width以及height等，我们来分别看一下：</p>
+<ul>
+<li>alt     属性用来对图像进行文本说明。一般情况下，当浏览器因某种原因无法载入图像时，就会显示这段文本。虽然 alt 属性值可以为空，但还是建议读者给 alt     属性设置符合图像信息的文本；</li>
+<li>title     用来设置鼠标移动到图片上的提示文字。它的值一般与 alt 的值相同，最大的区别是显示的前提条件不同，alt 属性是图片加载失败后显示，而 title     属性则是图片加载成功后鼠标放到它上面才显示；</li>
+<li>width     用来设置图片的宽度，使用时不需要加单位，默认是像素（px）；</li>
+<li>height     用来设置图片的高度，和 width 一样在使用时不需要加单位，默认是像素（px）。</li>
+</ul>
+<p>具体使用方法如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://c.baidu.com/cpp/temp/images/logo.jpg?v=3.412&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">title</span>=<span class="string">&quot;这是logo&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;SZ&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​        在这段代码中，首先引入了文件的路径，紧接着对图片的宽高进行了设置，均是 200px；其次又设置了 title 属性，当鼠标移动到图片上时，会显示 title 的内容；最后设置了 alt，当图片加载不出来会显示 alt 的内容。</p>
+<p>​         建议读者为页面上的图像都加上 alt 属性，这样不仅有助于更好的显示信息，而且对于那些使用屏幕阅读软件（存在视觉障碍的人使用的一类软件）的人来说帮助很大。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从上面的讲述中我们可以收获以下几点内容：</p>
+<ul>
+<li>src     表示图片的引用地址，这个地址可以是相对 url，也可以是绝对 url；</li>
+<li>alt     表示图片加载失败时显示的内容；</li>
+<li>title     表示鼠标移动到图片上时显示的文字；</li>
+<li>width     表示图片的宽，默认单位是像素（px）；</li>
+<li>height     表示图片的高，默认单位也是像素（px）。</li>
+</ul>
 ]]></content>
       <categories>
         <category>HTML学习</category>
@@ -215,6 +158,63 @@
 <li>块级元素内部可以嵌套块级元素或行内元素。</li>
 <li>建议行内元素里面只嵌套行内元素。</li>
 </ol>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML学习心得（URL）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</url>
+    <content><![CDATA[<p>URL结构解析</p>
+<p>本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。</p>
+<p>在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource Locator，URL），也被称为网址。每个 URL 都有其对应的文件（文档），例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a> 对应的是《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章，<a href="https://www.baidu.com/index.html">https://www.baidu.com/index.html</a> 对应的则是百度的官网首页。</p>
+<p>URL 是互联网的基础，最常见的形式就是网页通过链接，也就是 <a> 标签来包含其它 URL，用户通过点击，从当前 URL 跳转到另一个 URL。下面我们看一下 URL 是如何构成的。</p>
+<p><strong>1. URL的构成</strong></p>
+<p>URL 遵守一种标准的语法，它由协议、主机名、域名、端口、路径、以及文件名这六个部分构成，其中端口可以省略。具体语法规则如下：</p>
+<p>scheme://host.domain:port/path/filename</p>
+<p>在上述语法规则中，scheme 表示协议，host 表示主机名，domain 表示域名，port 表示端口（可以省略），path 表示文件的路径，filename 表示文件名称。接下来我们详细看一下这几部分到底是如何使用的。</p>
+<p><strong>1) 协议</strong></p>
+<p>协议用来指明客户端和服务器之间通信的类型。我们经常用到的协议有四种：http、https、ftp 以及 file。这四种协议的使用场景如下表所示：</p>
+<p>协议使用场景</p>
+<table>
+<thead>
+<tr>
+<th><strong>协议</strong></th>
+<th><strong>使用场景</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>http（HyperText Transfer Protocol）</td>
+<td>超文本传输协议。http 协议可以将编码为超文本的数据从一台计算机传送到另一台计算机，不进行加密。</td>
+</tr>
+<tr>
+<td>https（HyperText Transfer Protocol over SecureSocket Layer）</td>
+<td>安全超文本传输协议。以安全为目标的 http 通道，安全网页，加密所有信息交换。</td>
+</tr>
+<tr>
+<td>ftp（File Transfer Protocol）</td>
+<td>文件传输协议。</td>
+</tr>
+<tr>
+<td>file</td>
+<td>本机上的文件。</td>
+</tr>
+</tbody></table>
+<p><strong>2) 主机名</strong></p>
+<p>主机名可以向浏览器提供文件站点的名称。www 是我们常见的主机名，例如百度的网址 <a href="https://www.baidu.com/%E3%80%81%E6%B7%98%E5%AE%9D%E7%9A%84%E7%BD%91%E5%9D%80">https://www.baidu.com/、淘宝的网址</a> <a href="https://www.taobao.com/">https://www.taobao.com/</a> 使用的都是 www 的主机名。除此之外，还有很多网站使用的是其它主机名。例如C语言中文网的网址 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 的主机名是c，网易云音乐的网址 <a href="https://music.163.com/">https://music.163.com/</a> 的主机名是 music。</p>
+<p><strong>3) 域名</strong></p>
+<p>域名和主机名一起使用，被用来定义服务器的地址。Web 服务器遵守数字网际协议（Internet Protocol，IP），每一台连接到因特网的计算机都有一个固定的 IP 地址。域名即 IP 地址的别名，因为一般的 IP 地址都是长串的数字，为了方便记忆所以使用域名进行替代。简单来说，没有域名（IP）我们就不能上网。</p>
+<p><strong>4) 端口</strong></p>
+<p>端口用来定义主机上的端口号。如果不写，http 的默认端口号是 80，https 的默认端口号是 443，ftp 的默认端口号是 21。还是拿 C语言中文网举例说明，不论用户输入 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 还是 <a href="http://c.biancheng.net/:80%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%BD%E4%BC%9A%E8%A7%A3%E6%9E%90%E4%B8%BA">http://c.biancheng.net/:80，浏览器都会解析为</a> C语言中文网的链接。</p>
+<p><strong>5) 路径</strong></p>
+<p>路径指定服务器上文件的所在位置。就像我们自己在计算机上保存文件时所指定的文件夹一样，Web 服务器上的文件也有可能是存放在子目录（就是文件夹中的子文件夹）中的。如果是这样，路径中的相邻文件夹需要使用斜线（/）隔开。例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/views/7410.html</a> 这个网址，它的路径就是 /view/views。</p>
+<p><strong>6) 文件名</strong></p>
+<p>文件名用来定义文档或资源的名称。和路径类似，路径指的是文件夹，而它指的是文件夹中的文件。我们在《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章中讲到过网页文件的后缀有很多种，比如.html 、.php、 .jsp、.asp等。</p>
+<p>协议需要与 URL 的其它部分用://隔开。百度的网址后面的.com以及 C语言中文网的.net又称作域后缀（扩展名），用于表明该主机所在的域的类型。</p>
 ]]></content>
       <categories>
         <category>HTML学习</category>
@@ -303,6 +303,46 @@
   </entry>
   <entry>
     <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B007/</url>
+    <content><![CDATA[<p>绝对路径和相对路径</p>
+<p>​        我们在使用 HTML 中的 <a> 标签、<img> 标签、<link> 标签以及 <script> 标签时往往会涉及到路径。例如 <a> 标签，如果我们在写路径时，使用了错误的路径，就会导致跳转失败，为了避免这种情况，我们需要学习一下 HTML 的路径。在 HTML 中，路径具体分为绝对路径和相对路径。</p>
+<p>​        提示：<img> 、<link>、<script>标签我们会面陆续讲到。其中，<img> 标签用来引入图片，<link> 标签用来引入 CSS 样式，<script> 标签用来引入 js 文件。此处只需了解即可。</p>
+<p><strong>1. 绝对路径</strong></p>
+<p>​        绝对路径分为本地绝对路径和网络绝对路径两种。本地绝对路径一般指从盘符开始，到文件名称结束；网络绝对路径指从网站的域名开始，到文件名结束，在使用时需要加上协议。绝对路径之所以称为绝对，是指当所有页面引用同一个文件时，使用的路径都是一样的。</p>
+<p>示例如下：</p>
+<p>①D:/Hbulider/HBuilder/tools/nview/index.js</p>
+<p>②C:/Users/admin/Desktop/C语言中文网/url/url.html</p>
+<p>③<a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a></p>
+<p>④<a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net:80/view/7410.html</a></p>
+<p>⑤<a href="http://c.biancheng.net/">http://c.biancheng.net</a> </p>
+<p>我们来具体分析一下：</p>
+<ul>
+<li> ①     和 ② 表示本地绝对路径，因为它们是从盘符开始的；</li>
+<li> ③     ④ ⑤表示网络绝对路径，其中，③ 和 ④ 表示的地址是相同的（因为 http 默认端口号是 80，而且可以省略），类似于 ⑤ 这种省略路径和文件名的     url 属于特例，浏览器在解析时会自动解析项目里的 index.html 文件。</li>
+</ul>
+<p><strong>2. 相对路径</strong></p>
+<p>​        相对路径与绝对路径类似，不同的是在描述目录或文件路径时，所采用的参考点不同。绝对路径以域名或盘符为参考点，到文件名称结束；相对路径以当前文件位置为参考点，到文件名称结束。</p>
+<p>接下来，我们看一个示例。假设读者现有的项目目录如下图所示：</p>
+<p><img data-src="data:image/png;base64,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" alt="相对路径目录结构"></p>
+<p>​        目前有一个需求，在 index.html 页面中有一个 <a> 标签，点击它要跳转到 login.html，那么我们可以怎么实现呢？</p>
+<p>​         毫无疑问，可以使用上面讲过的绝对路径 <a href="http://c.biancheng.net/html/login.html"></a> 来跳转到 login.html；此处我们还可以使用相对路径实现。具体有以下几种方式：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">1. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”./html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">2. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">3. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”../html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在上述3种方式中，我们使用了 ./ 以及 ../，接下来看一下他们分别代表什么呢？</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">•  ./ 表示同级目录；</span><br><span class="line"> ../ 表示上一级目录， ../../ 表示上两级目录，以此类推。</span><br></pre></td></tr></table></figure>
+
+<p>​       其中，./可以省略不写，也就是说./html/login.html与html/login.html被浏览器解析为同一个路径。</p>
+<p>相对路径的写法可以有多种，我们只需要把./以及../代表的含义搞清楚，就可以应对所有的相对路径。</p>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
     <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B008/</url>
     <content><![CDATA[<p>HTML <table>标签（表格）</p>
 <p>​        在 HTML 中，我们使用 <table> 标签来定义表格。HTML 中的表格和 Excel 中的表格是类似的，都包括行、列、单元格、表头等元素。但是 HTML 表格在功能方面远没有 Excel 表格强大，HTML 表格不支持排序、求和、方差等数学计算，它一般用来展示数据。</p>
@@ -348,46 +388,6 @@
 <li> 每次合并     n 个单元格都要少写 n-1 个<td>标签。</li>
 </ul>
 <p>提示：即使一个单元格中没有任何内容，我们仍需使用 <td> 或 <th> 元素来表示一个空单元格的存在，建议在 <td> 或 <th> 中加入 &nbsp;（空格），否则低版本的 IE 可能无法显示出这个单元格的边框。</p>
-]]></content>
-      <categories>
-        <category>HTML学习</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
-    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B007/</url>
-    <content><![CDATA[<p>绝对路径和相对路径</p>
-<p>​        我们在使用 HTML 中的 <a> 标签、<img> 标签、<link> 标签以及 <script> 标签时往往会涉及到路径。例如 <a> 标签，如果我们在写路径时，使用了错误的路径，就会导致跳转失败，为了避免这种情况，我们需要学习一下 HTML 的路径。在 HTML 中，路径具体分为绝对路径和相对路径。</p>
-<p>​        提示：<img> 、<link>、<script>标签我们会面陆续讲到。其中，<img> 标签用来引入图片，<link> 标签用来引入 CSS 样式，<script> 标签用来引入 js 文件。此处只需了解即可。</p>
-<p><strong>1. 绝对路径</strong></p>
-<p>​        绝对路径分为本地绝对路径和网络绝对路径两种。本地绝对路径一般指从盘符开始，到文件名称结束；网络绝对路径指从网站的域名开始，到文件名结束，在使用时需要加上协议。绝对路径之所以称为绝对，是指当所有页面引用同一个文件时，使用的路径都是一样的。</p>
-<p>示例如下：</p>
-<p>①D:/Hbulider/HBuilder/tools/nview/index.js</p>
-<p>②C:/Users/admin/Desktop/C语言中文网/url/url.html</p>
-<p>③<a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a></p>
-<p>④<a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net:80/view/7410.html</a></p>
-<p>⑤<a href="http://c.biancheng.net/">http://c.biancheng.net</a> </p>
-<p>我们来具体分析一下：</p>
-<ul>
-<li> ①     和 ② 表示本地绝对路径，因为它们是从盘符开始的；</li>
-<li> ③     ④ ⑤表示网络绝对路径，其中，③ 和 ④ 表示的地址是相同的（因为 http 默认端口号是 80，而且可以省略），类似于 ⑤ 这种省略路径和文件名的     url 属于特例，浏览器在解析时会自动解析项目里的 index.html 文件。</li>
-</ul>
-<p><strong>2. 相对路径</strong></p>
-<p>​        相对路径与绝对路径类似，不同的是在描述目录或文件路径时，所采用的参考点不同。绝对路径以域名或盘符为参考点，到文件名称结束；相对路径以当前文件位置为参考点，到文件名称结束。</p>
-<p>接下来，我们看一个示例。假设读者现有的项目目录如下图所示：</p>
-<p><img data-src="data:image/png;base64,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" alt="相对路径目录结构"></p>
-<p>​        目前有一个需求，在 index.html 页面中有一个 <a> 标签，点击它要跳转到 login.html，那么我们可以怎么实现呢？</p>
-<p>​         毫无疑问，可以使用上面讲过的绝对路径 <a href="http://c.biancheng.net/html/login.html"></a> 来跳转到 login.html；此处我们还可以使用相对路径实现。具体有以下几种方式：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">1. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”./html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">2. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">3. <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">”../html/login.html”</span>&gt;</span>跳转到login.html<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>在上述3种方式中，我们使用了 ./ 以及 ../，接下来看一下他们分别代表什么呢？</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">•  ./ 表示同级目录；</span><br><span class="line"> ../ 表示上一级目录， ../../ 表示上两级目录，以此类推。</span><br></pre></td></tr></table></figure>
-
-<p>​       其中，./可以省略不写，也就是说./html/login.html与html/login.html被浏览器解析为同一个路径。</p>
-<p>相对路径的写法可以有多种，我们只需要把./以及../代表的含义搞清楚，就可以应对所有的相对路径。</p>
 ]]></content>
       <categories>
         <category>HTML学习</category>
