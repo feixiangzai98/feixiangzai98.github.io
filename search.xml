@@ -115,6 +115,115 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML学习心得（URL）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</url>
+    <content><![CDATA[<p>URL结构解析</p>
+<p>本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。</p>
+<p>在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource Locator，URL），也被称为网址。每个 URL 都有其对应的文件（文档），例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/7410.html</a> 对应的是《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章，<a href="https://www.baidu.com/index.html">https://www.baidu.com/index.html</a> 对应的则是百度的官网首页。</p>
+<p>URL 是互联网的基础，最常见的形式就是网页通过链接，也就是 <a> 标签来包含其它 URL，用户通过点击，从当前 URL 跳转到另一个 URL。下面我们看一下 URL 是如何构成的。</p>
+<p><strong>1. URL的构成</strong></p>
+<p>URL 遵守一种标准的语法，它由协议、主机名、域名、端口、路径、以及文件名这六个部分构成，其中端口可以省略。具体语法规则如下：</p>
+<p>scheme://host.domain:port/path/filename</p>
+<p>在上述语法规则中，scheme 表示协议，host 表示主机名，domain 表示域名，port 表示端口（可以省略），path 表示文件的路径，filename 表示文件名称。接下来我们详细看一下这几部分到底是如何使用的。</p>
+<p><strong>1) 协议</strong></p>
+<p>协议用来指明客户端和服务器之间通信的类型。我们经常用到的协议有四种：http、https、ftp 以及 file。这四种协议的使用场景如下表所示：</p>
+<p>协议使用场景</p>
+<table>
+<thead>
+<tr>
+<th><strong>协议</strong></th>
+<th><strong>使用场景</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>http（HyperText Transfer Protocol）</td>
+<td>超文本传输协议。http 协议可以将编码为超文本的数据从一台计算机传送到另一台计算机，不进行加密。</td>
+</tr>
+<tr>
+<td>https（HyperText Transfer Protocol over SecureSocket Layer）</td>
+<td>安全超文本传输协议。以安全为目标的 http 通道，安全网页，加密所有信息交换。</td>
+</tr>
+<tr>
+<td>ftp（File Transfer Protocol）</td>
+<td>文件传输协议。</td>
+</tr>
+<tr>
+<td>file</td>
+<td>本机上的文件。</td>
+</tr>
+</tbody></table>
+<p><strong>2) 主机名</strong></p>
+<p>主机名可以向浏览器提供文件站点的名称。www 是我们常见的主机名，例如百度的网址 <a href="https://www.baidu.com/%E3%80%81%E6%B7%98%E5%AE%9D%E7%9A%84%E7%BD%91%E5%9D%80">https://www.baidu.com/、淘宝的网址</a> <a href="https://www.taobao.com/">https://www.taobao.com/</a> 使用的都是 www 的主机名。除此之外，还有很多网站使用的是其它主机名。例如C语言中文网的网址 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 的主机名是c，网易云音乐的网址 <a href="https://music.163.com/">https://music.163.com/</a> 的主机名是 music。</p>
+<p><strong>3) 域名</strong></p>
+<p>域名和主机名一起使用，被用来定义服务器的地址。Web 服务器遵守数字网际协议（Internet Protocol，IP），每一台连接到因特网的计算机都有一个固定的 IP 地址。域名即 IP 地址的别名，因为一般的 IP 地址都是长串的数字，为了方便记忆所以使用域名进行替代。简单来说，没有域名（IP）我们就不能上网。</p>
+<p><strong>4) 端口</strong></p>
+<p>端口用来定义主机上的端口号。如果不写，http 的默认端口号是 80，https 的默认端口号是 443，ftp 的默认端口号是 21。还是拿 C语言中文网举例说明，不论用户输入 <a href="http://c.biancheng.net/">http://c.biancheng.net/</a> 还是 <a href="http://c.biancheng.net/:80%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%BD%E4%BC%9A%E8%A7%A3%E6%9E%90%E4%B8%BA">http://c.biancheng.net/:80，浏览器都会解析为</a> C语言中文网的链接。</p>
+<p><strong>5) 路径</strong></p>
+<p>路径指定服务器上文件的所在位置。就像我们自己在计算机上保存文件时所指定的文件夹一样，Web 服务器上的文件也有可能是存放在子目录（就是文件夹中的子文件夹）中的。如果是这样，路径中的相邻文件夹需要使用斜线（/）隔开。例如 <a href="http://c.biancheng.net/view/7410.html">http://c.biancheng.net/view/views/7410.html</a> 这个网址，它的路径就是 /view/views。</p>
+<p><strong>6) 文件名</strong></p>
+<p>文件名用来定义文档或资源的名称。和路径类似，路径指的是文件夹，而它指的是文件夹中的文件。我们在《<a href="http://c.biancheng.net/view/7410.html">网站到底是什么</a>》这篇文章中讲到过网页文件的后缀有很多种，比如.html 、.php、 .jsp、.asp等。</p>
+<p>协议需要与 URL 的其它部分用://隔开。百度的网址后面的.com以及 C语言中文网的.net又称作域后缀（扩展名），用于表明该主机所在的域的类型。</p>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML学习心得（块级元素和行内元素）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B005/</url>
+    <content><![CDATA[<p>在 HTML 中，标签（tag）通常又被称作元素（element）。例如 <a> 标签又叫做 <a> 元素，<p> 标签也叫作 <p> 元素。</p>
+<p>HTML 元素根据其表现形式可以分为 2 种：<br>• 块级元素<br>• 行内元素<br>任何 HTML 元素都属于这两者中的任意一种。<br>提示：块级元素和行内元素的概念极其重要，同时也是学习 CSS 的基础知识之一，请读者不要忽略。</p>
+<ol>
+<li>块级元素<br>块级元素（block element）在浏览器中占据整行，并排斥其它元素与其位于同一行。也就是说，块级元素的宽度是 100%。常见的块级元素如下表：</li>
+</ol>
+<p>块级元素    说明<br>div    最典型的块元素<br>p    表示段落<br>h1-h6    表示1-6级标题（默认加粗）<br>br    表示换行<br>ol    有序列表<br>ul    无序列表<br>块级元素<br>2. 行内元素<br>行内元素又称内联元素（inline block）。在浏览器中可以与其它行内元素共占一行，只有当多个元素的总宽度大于浏览器的宽度时，才会换行显示。常见的行内元素如下表：<br>行内元素<br>行内元素    说明<br>a    超链接<br>span    常用行级<br>strong    加粗，强调<br>b    加粗，不强调<br>em    斜体，强调<br>i    斜体，不强调<br>img    图片<br>input    输入框<br>select    下拉列表</p>
+<p><em><strong>实例演示</strong></em></p>
+<pre><code>1. &lt;!DOCTYPE html&gt;
+2. &lt;html lang=&quot;en&quot;&gt;
+3. &lt;head&gt;
+4.     &lt;meta charset=&quot;UTF-8&quot;&gt;
+5.     &lt;title&gt;块元素与行内元素&lt;/title&gt;
+6. &lt;/head&gt;
+7. &lt;body&gt;
+8. &lt;div&gt;div标签（块级标签）&lt;/div&gt;
+9. &lt;p&gt;p标签（块级标签）&lt;/p&gt;
+10. &lt;span&gt;span标签（行内标签）&lt;/span&gt;
+11. &lt;a href=&quot;#&quot;&gt;a标签（行内标签）&lt;/a&gt;
+12. &lt;/body&gt;
+13. &lt;/html&gt;
+</code></pre>
+<p>​          通过运行结果可以发现，<div> 标签和 <p> 标签分别独占一行，因为它们是块级元素；而 <span> 标签和 <a> 标签在同一行中显示，因为它们是行内元素。</p>
+<p>​         注意，这里我们说的独占一行是指元素在浏览器中的运行效果，并不是在编辑器中独占一行。在编辑器中，不论怎么书写代码，都不会影响它在浏览器中的运行效果。</p>
+<p><strong>3. 元素的嵌套</strong></p>
+<p>HTML 中的各个元素之间是可以互相嵌套的，例如：</p>
+<ul>
+<li>块元素可以嵌套块元素</li>
+<li>块元素可以嵌套行内元素</li>
+<li>行内元素可以嵌套行内元素</li>
+<li>行内元素可以嵌套块元素</li>
+</ul>
+<p>值得注意的是我们不建议在行内元素中嵌套块元素，这样不仅不符合开发规范，还会导致行内元素也独占一行。</p>
+<p>下面来看一段元素之间互相嵌套的代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. &lt;!DOCTYPE html&gt;</span><br><span class="line">2. &lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">3. &lt;head&gt;</span><br><span class="line">4.     &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">5.     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">6.     &lt;title&gt;元素间的嵌套&lt;/title&gt;</span><br><span class="line">7. &lt;/head&gt;</span><br><span class="line">8. &lt;body&gt;</span><br><span class="line">9.     &lt;!-- 块级元素嵌套块级元素 --&gt;</span><br><span class="line">10.     &lt;div&gt;</span><br><span class="line">11.         &lt;p&gt;p标签（块级元素）&lt;/p&gt;</span><br><span class="line">12.         &lt;div&gt;div标签（块级元素）&lt;/div&gt;</span><br><span class="line">13.     &lt;/div&gt;</span><br><span class="line">14.     &lt;!-- 块级元素嵌套行内元素 --&gt;</span><br><span class="line">15.     &lt;div&gt;</span><br><span class="line">16.         &lt;span&gt;span标签（行内元素）&lt;/span&gt;</span><br><span class="line">17.     &lt;/div&gt;</span><br><span class="line">18.     &lt;!-- 行内元素嵌套 --&gt;</span><br><span class="line">19.     &lt;span&gt;</span><br><span class="line">20.         &lt;span&gt;span标签（行内元素）&lt;/span&gt;</span><br><span class="line">21.         &lt;a href=&quot;#&quot;&gt;a标签（行内元素）&lt;/a&gt;</span><br><span class="line">22.     &lt;/span&gt;</span><br><span class="line">23. &lt;/body&gt;</span><br><span class="line">24. &lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
+<li>块级元素的宽度是 100%，在浏览器中默认独占一行。</li>
+<li>行内元素在浏览器中默认与其它行内元素共占一行。只有当多个行内元素的总宽度大于浏览器的宽度时，才会换行显示。</li>
+<li>块级元素内部可以嵌套块级元素或行内元素。</li>
+<li>建议行内元素里面只嵌套行内元素。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML学习心得（什么是网站）</title>
     <url>/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[<p>​        互联网已经深入人们的世界中，每个人每天都要浏览各种网页来获取不同的信息，那么网站是怎么来的？让我们进一步了解下去。  </p>

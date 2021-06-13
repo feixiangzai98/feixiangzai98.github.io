@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-13T07:12:58.834Z</updated>
+  <updated>2021-06-13T07:28:16.170Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML学习心得（URL）</title>
+    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/"/>
+    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B004/</id>
+    <published>2021-06-13T06:24:24.000Z</published>
+    <updated>2021-06-13T07:28:16.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;URL结构解析&lt;/p&gt;
+&lt;p&gt;本篇文章主要讲述 url 的概念及构成，如果读者已经非常清楚，可以跳过本节，直接进入下一节的学习。&lt;/p&gt;
+&lt;p&gt;在互联网中，任何一个可访问的文件或文档都具有一个唯一的地址，这种地址称为统一资源定位符（Uniform Resource</summary>
+        
+      
+    
+    
+    
+    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML学习心得（超链接）</title>
@@ -29,6 +56,32 @@
         
         
     <summary type="html">&lt;p&gt;在 HTML 中，我们使用 &lt;a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML学习心得（块级元素和行内元素）</title>
+    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B005/"/>
+    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B005/</id>
+    <published>2021-06-13T06:04:24.000Z</published>
+    <updated>2021-06-13T07:32:09.707Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在 HTML 中，标签（tag）通常又被称作元素（element）。例如 &lt;a&gt; 标签又叫做 &lt;a&gt; 元素，&lt;p&gt; 标签也叫作 &lt;p&gt; 元素。&lt;/p&gt;
+&lt;p&gt;HTML 元素根据其表现形式可以分为 2 种：&lt;br&gt;• 块级元素&lt;br&gt;• 行内元素&lt;br&gt;任何 HTML</summary>
         
       
     
