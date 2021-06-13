@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-13T07:58:19.959Z</updated>
+  <updated>2021-06-13T07:28:16.170Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,83 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
-    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B008/"/>
-    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B008/</id>
-    <published>2021-06-13T07:44:24.000Z</published>
-    <updated>2021-06-13T07:58:19.959Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML &lt;table&gt;标签（表格）&lt;/p&gt;
-&lt;p&gt;​        在 HTML 中，我们使用 &lt;table&gt; 标签来定义表格。HTML 中的表格和 Excel 中的表格是类似的，都包括行、列、单元格、表头等元素。但是 HTML 表格在功能方面远没有 Excel</summary>
-        
-      
-    
-    
-    
-    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
-    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B007/"/>
-    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B007/</id>
-    <published>2021-06-13T07:34:24.000Z</published>
-    <updated>2021-06-13T07:52:07.979Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;绝对路径和相对路径&lt;/p&gt;
-&lt;p&gt;​        我们在使用 HTML 中的 &lt;a&gt; 标签、&lt;img&gt; 标签、&lt;link&gt; 标签以及 &lt;script&gt; 标签时往往会涉及到路径。例如 &lt;a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML学习心得（有序列表&amp;无序列表&amp;定义列表）</title>
-    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B006/"/>
-    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B006/</id>
-    <published>2021-06-13T07:24:24.000Z</published>
-    <updated>2021-06-13T07:44:21.348Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​      </summary>
-        
-      
-    
-    
-    
-    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-  </entry>
   
   <entry>
     <title>HTML学习心得（URL）</title>
@@ -133,32 +56,6 @@
         
         
     <summary type="html">&lt;p&gt;在 HTML 中，我们使用 &lt;a&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="HTML学习" scheme="http://example.com/categories/HTML%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="HTML" scheme="http://example.com/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML学习心得（块级元素和行内元素）</title>
-    <link href="http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B005/"/>
-    <id>http://example.com/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B005/</id>
-    <published>2021-06-13T06:04:24.000Z</published>
-    <updated>2021-06-13T07:32:09.707Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在 HTML 中，标签（tag）通常又被称作元素（element）。例如 &lt;a&gt; 标签又叫做 &lt;a&gt; 元素，&lt;p&gt; 标签也叫作 &lt;p&gt; 元素。&lt;/p&gt;
-&lt;p&gt;HTML 元素根据其表现形式可以分为 2 种：&lt;br&gt;• 块级元素&lt;br&gt;• 行内元素&lt;br&gt;任何 HTML</summary>
         
       
     
