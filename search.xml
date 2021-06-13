@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML学习心得（插入图片标签）</title>
+    <url>/2021/06/13/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B002/</url>
+    <content><![CDATA[<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p>​        开发过程中，经常使用图像来美化页面，图像已经成为大多数网站的一个重要组成部分。都说一图胜千言，好的图像有助于制作出精美的网站，从而与那些外观平平的网站区别开来。在 HTML 中，使用 <img> 标签来插入图像，其语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img> 是图片 image 的简称，它只包含属性，没有闭和标签。src 是它的必选属性，用来表示图片的路径来源。下面，我们来详细分析一下 <img> 标签的 src 属性。</p>
+<h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p>​        src 是 source 的简称，用来声明图像文件的来源，也就是定义图片的引用地址。图片可以是.jpg、.png、.gif等多种格式，引用地址可以是相对 url，也可以是绝对 url。下面我们来看两个示例。</p>
+<h5 id="引用网络图片"><a href="#引用网络图片" class="headerlink" title="引用网络图片"></a>引用网络图片</h5><p>​      引用网络图片语法格式如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://tupian.hudiewang.com/cpp/tem/new/logo.jpg?v=4.213&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="引用本地图片"><a href="#引用本地图片" class="headerlink" title="引用本地图片"></a>引用本地图片</h5><p>​      如果在项目的当前文件中，想要引入上一层 image 目录下的一张图片 logo.jpg，可以这样引用：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;../image/logo.jpg&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>此处../可以进入上一层目录，然后进入 image 文件夹，最后找到 img.jpg。</p>
+<p>提示：图片的名称尽量不要使用中文，否则即使路径正确，浏览器也可能无法识别，从而显示不出图片。</p>
+<h3 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h3><p>​       前面讲述了 <img> 标签的必选属性 src，接下来再看一下它的可选属性。<img> 标签常用的可选属性有alt、title、width以及height等，我们来分别看一下：</p>
+<ul>
+<li>alt     属性用来对图像进行文本说明。一般情况下，当浏览器因某种原因无法载入图像时，就会显示这段文本。虽然 alt 属性值可以为空，但还是建议读者给 alt     属性设置符合图像信息的文本；</li>
+<li>title     用来设置鼠标移动到图片上的提示文字。它的值一般与 alt 的值相同，最大的区别是显示的前提条件不同，alt 属性是图片加载失败后显示，而 title     属性则是图片加载成功后鼠标放到它上面才显示；</li>
+<li>width     用来设置图片的宽度，使用时不需要加单位，默认是像素（px）；</li>
+<li>height     用来设置图片的高度，和 width 一样在使用时不需要加单位，默认是像素（px）。</li>
+</ul>
+<p>具体使用方法如下：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://c.baidu.com/cpp/temp/images/logo.jpg?v=3.412&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200&quot;</span> <span class="attr">title</span>=<span class="string">&quot;这是logo&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;SZ&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​        在这段代码中，首先引入了文件的路径，紧接着对图片的宽高进行了设置，均是 200px；其次又设置了 title 属性，当鼠标移动到图片上时，会显示 title 的内容；最后设置了 alt，当图片加载不出来会显示 alt 的内容。</p>
+<p>​         建议读者为页面上的图像都加上 alt 属性，这样不仅有助于更好的显示信息，而且对于那些使用屏幕阅读软件（存在视觉障碍的人使用的一类软件）的人来说帮助很大。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>从上面的讲述中我们可以收获以下几点内容：</p>
+<ul>
+<li>src     表示图片的引用地址，这个地址可以是相对 url，也可以是绝对 url；</li>
+<li>alt     表示图片加载失败时显示的内容；</li>
+<li>title     表示鼠标移动到图片上时显示的文字；</li>
+<li>width     表示图片的宽，默认单位是像素（px）；</li>
+<li>height     表示图片的高，默认单位也是像素（px）。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>HTML学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML学习心得（什么是网站）</title>
     <url>/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[<p>​        互联网已经深入人们的世界中，每个人每天都要浏览各种网页来获取不同的信息，那么网站是怎么来的？让我们进一步了解下去。  </p>
