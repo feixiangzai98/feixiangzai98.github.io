@@ -12,6 +12,8 @@
 <li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
 <li>多个样式定义可<strong>层叠</strong>为一个</li>
 </ul>
+<span id="more"></span>
+
 <h2 id="CSS-规则"><a href="#CSS-规则" class="headerlink" title="CSS 规则"></a>CSS 规则</h2><p>由两个主要的部分构成：选择器，以及一条或多条声明:</p>
 <p><img data-src="https://www.runoob.com/wp-content/uploads/2013/07/632877C9-2462-41D6-BD0E-F7317E4C42AC.jpg" alt="img"></p>
 <p>选择器通常是您需要改变样式的 HTML 元素。</p>

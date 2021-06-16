@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-16T12:45:35.354Z</updated>
+  <updated>2021-06-16T12:46:47.222Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,17 +21,18 @@
     <link href="http://example.com/2021/06/13/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2021/06/13/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-06-13T14:01:24.000Z</published>
-    <updated>2021-06-16T12:45:35.354Z</updated>
+    <updated>2021-06-16T12:46:47.222Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;h2 id=&quot;什么是-CSS&quot;&gt;&lt;a href=&quot;#什么是-CSS&quot; class=&quot;headerlink&quot; title=&quot;什么是 CSS?&quot;&gt;&lt;/a&gt;什么是 CSS?&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;CSS 指层叠样式表 (&lt;strong&gt;C&lt;/strong&gt;ascading</summary>
-        
-      
+&lt;li&gt;CSS 指层叠样式表 (&lt;strong&gt;C&lt;/strong&gt;ascading &lt;strong&gt;S&lt;/strong&gt;tyle &lt;strong&gt;S&lt;/strong&gt;heets)&lt;/li&gt;
+&lt;li&gt;样式定义&lt;strong&gt;如何显示&lt;/strong&gt; HTML 元素&lt;/li&gt;
+&lt;li&gt;样式通常存储在&lt;strong&gt;样式表&lt;/strong&gt;中&lt;/li&gt;
+&lt;li&gt;把样式添加到 HTML 4.0 中，是为了&lt;strong&gt;解决内容与表现分离的问题&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;外部样式表&lt;/strong&gt;可以极大提高工作效率&lt;/li&gt;
+&lt;li&gt;外部样式表通常存储在 &lt;strong&gt;CSS 文件&lt;/strong&gt;中&lt;/li&gt;
+&lt;li&gt;多个样式定义可&lt;strong&gt;层叠&lt;/strong&gt;为一个&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
