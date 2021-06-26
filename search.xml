@@ -1,67 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>css学习总结</title>
-    <url>/2021/06/13/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="什么是-CSS"><a href="#什么是-CSS" class="headerlink" title="什么是 CSS?"></a>什么是 CSS?</h2><ul>
-<li>CSS 指层叠样式表 (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)</li>
-<li>样式定义<strong>如何显示</strong> HTML 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
+    <title>javaScript学习总结</title>
+    <url>/2021/06/13/javaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p><strong>JavaScript 是属于 HTML 和 Web 的编程语言。</strong></p>
+<p>编程令计算机完成您需要它们做的工作。</p>
 <span id="more"></span>
 
-<h2 id="CSS-规则"><a href="#CSS-规则" class="headerlink" title="CSS 规则"></a>CSS 规则</h2><p>由两个主要的部分构成：选择器，以及一条或多条声明:</p>
-<p><img data-src="https://www.runoob.com/wp-content/uploads/2013/07/632877C9-2462-41D6-BD0E-F7317E4C42AC.jpg" alt="img"></p>
-<p>选择器通常是您需要改变样式的 HTML 元素。</p>
-<p>每条声明由一个属性和一个值组成。</p>
-<p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
-<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
-<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 “#” 来定义。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># id &#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="class-选择器"><a href="#class-选择器" class="headerlink" title="class 选择器"></a>class 选择器</h3><p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
-<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点”.”号显示：</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.class</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="CSS声明"><a href="#CSS声明" class="headerlink" title="CSS声明"></a>CSS声明</h3><h4 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h4><ul>
-<li>background-color 背景颜色</li>
-<li>background-image 背景图片</li>
-</ul>
-<h4 id="CSS-文本格式"><a href="#CSS-文本格式" class="headerlink" title="CSS 文本格式"></a>CSS 文本格式</h4><p>color:#00ff00; 文本颜色</p>
-<p>text-align:center; 文本对齐方式</p>
-<h3 id="css表格边框"><a href="#css表格边框" class="headerlink" title="css表格边框"></a>css表格边框</h3><p>指定CSS表格边框，使用border属性。</p>
-<p>下面的例子指定了一个表格的Th和TD元素的黑色边框：</p>
-<p>Width和height属性定义表格的宽度和高度。</p>
-<p>下面的例子是设置100％的宽度，50像素的th元素的高度的表格：</p>
-<p>text-align属性设置水平对齐方式，向左，右，或中心：</p>
-<h3 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h3><h4 id="CSS-盒子模型-Box-Model"><a href="#CSS-盒子模型-Box-Model" class="headerlink" title="CSS 盒子模型(Box Model)"></a>CSS 盒子模型(Box Model)</h4><p>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。</p>
-<p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
-<p>盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
-<p>下面的图片说明了盒子模型(Box Model)：</p>
-<p><img data-src="https://www.runoob.com/images/box-model.gif" alt="CSS box-model"></p>
-<p>不同部分的说明：</p>
-<ul>
-<li><strong>Margin(外边距)</strong> - 清除边框外的区域，外边距是透明的。</li>
-<li><strong>Border(边框)</strong> - 围绕在内边距和内容外的边框。</li>
-<li><strong>Padding(内边距)</strong> - 清除内容周围的区域，内边距是透明的。</li>
-<li><strong>Content(内容)</strong> - 盒子的内容，显示文本和图像。</li>
-</ul>
-<p>为了正确设置元素在所有浏览器中的宽度和高度，你需要知道的盒模型是如何工作的。</p>
-<p><img data-src="https://www.runoob.com/wp-content/uploads/2013/08/VlwVi.png" alt="img"></p>
-<h3 id="CSS-Display"><a href="#CSS-Display" class="headerlink" title="CSS Display"></a>CSS Display</h3><p>隐藏一个元素可以通过把display属性设置为”none”，或把visibility属性设置为”hidden”。但是请注意，这两种方法会产生不同的结果。</p>
-<p>visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。</p>
+<p>函数</p>
+<p>如果功能代码中有多次重复执行的语句，为了简化代码，可以使用函数进行调用。</p>
+<p>例如：</p>
+<p>有多个地方用到两个数相加的结果的功能，我不想写多个函数，可以编写一个函数多次调用</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> c = a + b;</span><br><span class="line">    <span class="keyword">return</span> c;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">add();</span><br><span class="line">add();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>函数的声明</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">theFirstName</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>函数表达式</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">123</span>;</span><br><span class="line">    <span class="keyword">var</span> b = <span class="number">456</span>;</span><br><span class="line">    <span class="keyword">var</span> c = a + b;</span><br><span class="line">    <span class="built_in">document</span>.Write(c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>形参</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.write(a + b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实参</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">test(<span class="number">1</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>arguments 参数</p>
+<p>在函数中当实参列表出生时有几个参数arguments 就会有几个</p>
+<p>例如</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.write(a + b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">test(<span class="number">1</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<p>arguments[1，2]</p>
+<p>函数执行的先后顺序：</p>
+<p>javaScript是一门解释性语言 </p>
+<p>1.语法的分析 </p>
+<p>检查语法有没有错误</p>
+<p>2.预编译</p>
+<p>1.创建AO对象</p>
+<p>2.找到形参和变量声明，将变量和形参名作为AO属性名，值为undefined</p>
+<p>3.将实参值和形参相统一</p>
+<p>4.在函数体里面找函数的声明，值赋予函数体</p>
+<p>this：</p>
+<ol>
+<li>函数预编译过程中 —-&gt; window</li>
+<li>全局作用域里this —-&gt; window</li>
+<li>谁调用的方法，this就是谁</li>
+</ol>
+<p>对象其实也是一种基本函数，他可以描述一个物体的属性值和他的方法</p>
+<p>创建对象的方法：</p>
+<ol>
+<li><p>var obj =   {</p>
+<p>​          xxxx : xxxx</p>
+<p>​          xxxx : xxxx</p>
+<p>​         somke : function(){</p>
+<p>​              xxxxxxxxxxxxxxx</p>
+<p>​     }</p>
+<p>}    对象字面量，对象直接量</p>
+</li>
+</ol>
+<p>增： obj.新的属性 = xxxx;</p>
+<p> 删除 ： delete xxxx</p>
+<p>改： obj.xxxx  = xxxx；</p>
+<p>查：  obj.xxxx </p>
+<ol start="2">
+<li><p>var obj = new object(); 通过object创建对象</p>
+<p>但是当想要同时创造多个对象，但是这些对象的很多属性或者方法都类似我们可以通过构造函数来帮助我们</p>
+<p>function obj （形参）{</p>
+<p>​        this.xxx = xxx;</p>
+<p>​        this.xxx = xxx;</p>
+<p>​        this.run = function(){</p>
+<p>​             xxxxxxxxxx</p>
+<p>​     }</p>
+<p>}</p>
+<p>如果要创建多个对象时</p>
+<p>直接   var demo01 =  new obj（）；</p>
+</li>
+</ol>
+<p>​        var demo02 =  new obj（）；</p>
+<p>​      就可以创建出多个对象</p>
+<p>构造函数的内部原理</p>
+<p>  函数与构造函数的区别就是在创建对象时（调用函数时） new 后 </p>
+<p>函数体最前面加上隐式加上</p>
+<p>  var this = {</p>
+<p>}</p>
+<p>return this；</p>
+<p>包装类：</p>
 ]]></content>
       <categories>
-        <category>CSS学习</category>
+        <category>javaScript学习</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>javaScript</tag>
       </tags>
   </entry>
   <entry>
@@ -76,8 +121,8 @@
 <h2 id="HTML元素-1"><a href="#HTML元素-1" class="headerlink" title="HTML元素"></a>HTML<title>元素</h2><title> 标签定义了不同文档的标题。
 
 <title> 在 HTML/XHTML 文档中是必须的。
-
 <title> 元素:
+
 
 <ul>
 <li>定义了浏览器工具栏的标题</li>
@@ -261,6 +306,70 @@ HTML <span> 元素是内联元素，可用作文本的容器
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css学习总结</title>
+    <url>/2021/06/13/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="什么是-CSS"><a href="#什么是-CSS" class="headerlink" title="什么是 CSS?"></a>什么是 CSS?</h2><ul>
+<li>CSS 指层叠样式表 (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)</li>
+<li>样式定义<strong>如何显示</strong> HTML 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="CSS-规则"><a href="#CSS-规则" class="headerlink" title="CSS 规则"></a>CSS 规则</h2><p>由两个主要的部分构成：选择器，以及一条或多条声明:</p>
+<p><img data-src="https://www.runoob.com/wp-content/uploads/2013/07/632877C9-2462-41D6-BD0E-F7317E4C42AC.jpg" alt="img"></p>
+<p>选择器通常是您需要改变样式的 HTML 元素。</p>
+<p>每条声明由一个属性和一个值组成。</p>
+<p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+<p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 “#” 来定义。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># id &#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="class-选择器"><a href="#class-选择器" class="headerlink" title="class 选择器"></a>class 选择器</h3><p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+<p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点”.”号显示：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.class</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS声明"><a href="#CSS声明" class="headerlink" title="CSS声明"></a>CSS声明</h3><h4 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h4><ul>
+<li>background-color 背景颜色</li>
+<li>background-image 背景图片</li>
+</ul>
+<h4 id="CSS-文本格式"><a href="#CSS-文本格式" class="headerlink" title="CSS 文本格式"></a>CSS 文本格式</h4><p>color:#00ff00; 文本颜色</p>
+<p>text-align:center; 文本对齐方式</p>
+<h3 id="css表格边框"><a href="#css表格边框" class="headerlink" title="css表格边框"></a>css表格边框</h3><p>指定CSS表格边框，使用border属性。</p>
+<p>下面的例子指定了一个表格的Th和TD元素的黑色边框：</p>
+<p>Width和height属性定义表格的宽度和高度。</p>
+<p>下面的例子是设置100％的宽度，50像素的th元素的高度的表格：</p>
+<p>text-align属性设置水平对齐方式，向左，右，或中心：</p>
+<h3 id="CSS-盒子模型"><a href="#CSS-盒子模型" class="headerlink" title="CSS 盒子模型"></a>CSS 盒子模型</h3><h4 id="CSS-盒子模型-Box-Model"><a href="#CSS-盒子模型-Box-Model" class="headerlink" title="CSS 盒子模型(Box Model)"></a>CSS 盒子模型(Box Model)</h4><p>所有HTML元素可以看作盒子，在CSS中，”box model”这一术语是用来设计和布局时使用。</p>
+<p>CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。</p>
+<p>盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
+<p>下面的图片说明了盒子模型(Box Model)：</p>
+<p><img data-src="https://www.runoob.com/images/box-model.gif" alt="CSS box-model"></p>
+<p>不同部分的说明：</p>
+<ul>
+<li><strong>Margin(外边距)</strong> - 清除边框外的区域，外边距是透明的。</li>
+<li><strong>Border(边框)</strong> - 围绕在内边距和内容外的边框。</li>
+<li><strong>Padding(内边距)</strong> - 清除内容周围的区域，内边距是透明的。</li>
+<li><strong>Content(内容)</strong> - 盒子的内容，显示文本和图像。</li>
+</ul>
+<p>为了正确设置元素在所有浏览器中的宽度和高度，你需要知道的盒模型是如何工作的。</p>
+<p><img data-src="https://www.runoob.com/wp-content/uploads/2013/08/VlwVi.png" alt="img"></p>
+<h3 id="CSS-Display"><a href="#CSS-Display" class="headerlink" title="CSS Display"></a>CSS Display</h3><p>隐藏一个元素可以通过把display属性设置为”none”，或把visibility属性设置为”hidden”。但是请注意，这两种方法会产生不同的结果。</p>
+<p>visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。</p>
+]]></content>
+      <categories>
+        <category>CSS学习</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
 </search>

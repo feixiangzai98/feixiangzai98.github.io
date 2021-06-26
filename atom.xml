@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-06-16T12:46:47.222Z</updated>
+  <updated>2021-06-17T07:59:02.409Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javaScript学习总结</title>
+    <link href="http://example.com/2021/06/13/javaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2021/06/13/javaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-06-13T14:01:24.000Z</published>
+    <updated>2021-06-17T07:59:02.409Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;JavaScript 是属于 HTML 和 Web 的编程语言。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;编程令计算机完成您需要它们做的工作。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="javaScript学习" scheme="http://example.com/categories/javaScript%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="javaScript" scheme="http://example.com/tags/javaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>css学习总结</title>
@@ -48,7 +68,7 @@
     <link href="http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2021/06/12/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-06-12T13:01:24.000Z</published>
-    <updated>2021-06-16T11:50:35.436Z</updated>
+    <updated>2021-06-16T15:41:49.994Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;HTML-超文本标记语言&quot;&gt;&lt;a href=&quot;#HTML-超文本标记语言&quot; class=&quot;headerlink&quot; title=&quot;HTML   超文本标记语言&quot;&gt;&lt;/a&gt;HTML   超文本标记语言&lt;/h2&gt;&lt;p&gt;​        HTML是一种用于创建网页的标准标记语言。&lt;/p&gt;
